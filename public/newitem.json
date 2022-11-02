@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "kevin@naver.com",
+        "sale" : true
+    },
+    {
+        "id": 2,
+        "name": "Kevin Doe",
+        "email": "wowo@naver.com",
+        "sale" : true
+    }
+    ,
+    {
+        "id": 3,
+        "name": "Jane Doe",
+        "email": "bbishoe@gmail.com"
+        ,"sale" : false
+    }
+]
