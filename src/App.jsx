@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import { Fragment, useEffect, useState } from 'react';
 import AppProfile from './components/AppProfile';
 import Avatar from './components/Avatar';
