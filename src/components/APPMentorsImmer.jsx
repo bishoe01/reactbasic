@@ -1,22 +1,34 @@
 import React, { useReducer, useState } from 'react'
 import PersonReducer from '../reducer/PersonReducer';
-
-export default function APPMentors() {
-    // const [person, setPerson] = useState(initialPerson);
-    const [person,dispatch] = useReducer(PersonReducer,initialPerson);
+import {useImmer} from 'use-immer';
+export default function APPMentorsImmer() {
+    const [person, updatePerson] = useImmer(initialPerson);
     const HandleChangeName = () => {
         const prev = prompt(`Who to change? type the ID`);
         const current = prompt(`What to change?`);
-        dispatch({type:"update",prev,current})
+        updatePerson(person => {
+            const mentor = person.mentor.find(mentor => mentor.id === parseInt(prev));
+            mentor.name = current;
+            mentor.changed = true;
+        });
     }
     const HandleDeleteMentor = () => {
         const prev = prompt(`Who to Delete? type the ID`);
-        dispatch({type:"delete",prev})
+        updatePerson(person => {
+            person.mentor = person.mentor.filter(mentor => mentor.id !== parseInt(prev));
+        });
     };
     const HandleAddMentor = () => {
         const new_name = prompt(`Name ? `);
         const new_position = prompt(`Position?`);
-        dispatch({type:"add",new_name,new_position})
+        updatePerson(person => {
+            person.mentor.push({
+                id: person.mentor.length + 1,
+                name: new_name,
+                title: new_position,
+                changed: false,
+            });
+        });
     }
 
     return (

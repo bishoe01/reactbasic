@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AppXY from './components/APPXY';
 import APPMentors from './components/APPMentors';
+import APPMentorsImmer from './components/APPMentorsImmer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <APPMentors/>
+  <APPMentorsImmer/>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -32,10 +32,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:13.5.0"],\
             ["eslint-config-react-app", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:7.0.1"],\
+            ["immer", "npm:9.0.16"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:18.2.0"],\
             ["react-scripts", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:5.0.1"],\
             ["sass", "npm:1.56.0"],\
+            ["use-immer", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:0.8.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -5990,10 +5992,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:13.5.0"],\
             ["eslint-config-react-app", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:7.0.1"],\
+            ["immer", "npm:9.0.16"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:18.2.0"],\
             ["react-scripts", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:5.0.1"],\
             ["sass", "npm:1.56.0"],\
+            ["use-immer", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:0.8.1"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -16461,6 +16465,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["url-parse", "npm:1.5.10"],\
             ["querystringify", "npm:2.2.0"],\
             ["requires-port", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["use-immer", [\
+        ["npm:0.8.1", {\
+          "packageLocation": "./.yarn/cache/use-immer-npm-0.8.1-2cf589888f-9ffc1a201a.zip/node_modules/use-immer/",\
+          "packageDependencies": [\
+            ["use-immer", "npm:0.8.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:0.8.1", {\
+          "packageLocation": "./.yarn/__virtual__/use-immer-virtual-5af81ec332/0/cache/use-immer-npm-0.8.1-2cf589888f-9ffc1a201a.zip/node_modules/use-immer/",\
+          "packageDependencies": [\
+            ["use-immer", "virtual:48b507ff76d9ed56a888debf1176c748205ff67557c73d9a4ed316d5eb255136a78252cb19882150d2d29e633954cde80267b0de39317c9194d06c6d8b79839c#npm:0.8.1"],\
+            ["@types/immer", null],\
+            ["@types/react", null],\
+            ["immer", "npm:9.0.16"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/immer",\
+            "@types/react",\
+            "immer",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
