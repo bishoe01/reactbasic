@@ -1,0 +1,22 @@
+[{
+    "id": "1",
+    "name": "Sale_Jacket",
+    "color": ["black", "red", "blue"],
+    "size": ["S", "M", "L"],
+    "price": 5
+},
+{
+    "id": "2",
+    "name": "Sale_T-shirt",
+    "color": ["black", "red", "blue"],
+    "size": ["S", "M", "L"],
+    "price": 3
+},
+{
+    "id": "3",
+    "name": "Sale_Pants",
+    "color": ["black", "red", "blue"],
+    "size": ["S", "M", "L"],
+    "price": 2
+}
+]

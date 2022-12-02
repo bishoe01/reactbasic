@@ -8,10 +8,12 @@ import APPMentors from './components/APPMentors';
 import APPMentorsImmer from './components/APPMentorsImmer';
 import AppForm from './components/AppForm';
 import AppWrap from './components/AppWrap';
+import AppTheme from './components/AppTheme';
+import Products from './components/Products';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <AppWrap/>
+  <Products/>
 );
 
 // If you want to start measuring performance in your app, pass a function
