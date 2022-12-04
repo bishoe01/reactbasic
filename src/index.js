@@ -10,10 +10,11 @@ import AppForm from './components/AppForm';
 import AppWrap from './components/AppWrap';
 import AppTheme from './components/AppTheme';
 import Products from './components/Products';
+import Main from './components/TodoList/Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Products/>
+  <Main/>
 );
 
 // If you want to start measuring performance in your app, pass a function
