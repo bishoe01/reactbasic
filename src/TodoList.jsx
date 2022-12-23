@@ -20,7 +20,7 @@ function TodoList({filter}) {
     return (
         <div>
             <ul>
-                {todos.map((item, index) => (
+                {filtered.map((item, index) => (
                     <TodoComponent key={index} task={item} onUpdate={handleUpdate} onDelete={handleDelete} />
                 ))
                 }

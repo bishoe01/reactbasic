@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.scss';
 const { v4: uuidv4 } = require('uuid');
 
 function AddTodos({onAdds}) {
@@ -13,12 +14,13 @@ function AddTodos({onAdds}) {
         setText("");
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="addform">
             <input type="text" 
             value={text}
             placeholder='Enter your todos'
             onChange = {handleChange}
             />
+            <button className='button'>Submit</button>
         </form>
     );
 }
