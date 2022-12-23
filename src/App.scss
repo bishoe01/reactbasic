@@ -53,3 +53,32 @@
 //   left: -15px;
 //   top: -15px;
 // }
+
+
+
+// .main{
+//     width: 100vw;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid gray;
+    .filters{
+        display: flex;
+        .filter{
+            font-size: 1.4rem;
+            margin : 0.3rem;
+            text-transform: capitalize;
+            border: 0.3px solid gray;
+            background-color: transparent;
+            color: rgb(221, 190, 33);
+        }
+    }
+}

@@ -22,9 +22,10 @@ function Main(props) {
     const [darkMode, setDarkMode] = useState(false);
     const onPressEnter = (e) => {
         if (e.key === 'Enter') {
-            console.log(`${e.target.value} is added`);
+            if(e.target.value === '') return;
+            else {console.log(`${e.target.value} is added`);
             setTodos([...todos, { text: e.target.value, isCompleted: false }]);
-            e.target.value = '';
+            e.target.value = '';}
         }
     }
     useEffect(() => {
@@ -44,7 +45,7 @@ function Main(props) {
             <Card w="25%" style={{color : darkMode? "white" : "black",backgroundColor : darkMode ? "black" : "white"}}>
                 <CardHeader>
                     <Heading size='md' pr="15%" style={{ display: "flex", justifyContent: "space-between" }}>
-                        <IconButton style={{backgroundColor : darkMode ? "black" : "gray", color: darkMode? "orange" : "black"}}aria-label='Search database' icon={darkMode ? <MoonIcon/> : <SunIcon />} onClick={() =>setDarkMode(!darkMode)} />
+                        <IconButton style={{backgroundColor : darkMode ? "black" : "gray", color: darkMode? "orange" : "white"}}aria-label='Search database' icon={darkMode ? <MoonIcon/> : <SunIcon />} onClick={() =>setDarkMode(!darkMode)} />
                         <Tabs>
                             <TabList>
                                 {show.map((item, index) => {
